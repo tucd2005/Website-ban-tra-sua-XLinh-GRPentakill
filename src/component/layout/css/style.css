@@ -4,14 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  /* display: grid;
-  grid-template-areas:
-    "header header header"
-    "section section section"
-    "footer footer footer";
-  gap: 10px; */
-}
 
 header {
   grid-area: header;
@@ -40,8 +32,6 @@ header > .header-main {
   margin: 20px;
 }
 
-.search {
-}
 .search > i {
   padding: 10px;
   /* border: 1px solid gray; */
