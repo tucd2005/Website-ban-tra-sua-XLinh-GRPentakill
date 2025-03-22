@@ -9,7 +9,7 @@ const login = () => {
       <div>
         <Header />
       </div>
-      <div className="flex justify-center items-center min-h-screen ">
+      <div className="flex justify-center items-center min-h-[calc(100vh-80px)] pt-20">
         <div className="bg-white p-8 rounded-lg shadow-lg flex max-w-3xl w-full">
           {/* Form Section */}
           <div className="w-1/2 p-6">

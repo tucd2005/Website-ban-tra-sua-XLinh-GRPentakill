@@ -99,6 +99,59 @@ const Header: React.FC = () => {
           </div>
         </div>
       </div>
+
+      <nav className="bg-white border-t border-gray-300 shadow-sm">
+        <div className="max-w-screen-xl mx-auto flex justify-between items-center px-4 py-3">
+          <button className="bg-green-700 text-white px-4 py-2 rounded-lg">
+            All Categories
+          </button>
+          <div className="flex space-x-6">
+            <a
+              href="#"
+              className="text-gray-700 hover:text-green-700 font-medium"
+            >
+              Home
+            </a>
+            <div className="relative group">
+              <a
+                href="#"
+                className="text-gray-700 hover:text-green-700 font-medium"
+              >
+                Categories
+              </a>
+              <div className="absolute hidden group-hover:block bg-white border border-gray-300 mt-1 shadow-md min-w-[150px]">
+                <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                  Category 1
+                </a>
+                <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                  Category 2
+                </a>
+              </div>
+            </div>
+            <a
+              href="#"
+              className="text-gray-700 hover:text-green-700 font-medium"
+            >
+              Products
+            </a>
+            <a
+              href="#"
+              className="text-gray-700 hover:text-green-700 font-medium"
+            >
+              Blog
+            </a>
+            <a
+              href="#"
+              className="text-gray-700 hover:text-green-700 font-medium"
+            >
+              Offers
+            </a>
+          </div>
+          <button className="bg-green-700 text-white px-4 py-2 rounded-lg">
+            New York
+          </button>
+        </div>
+      </nav>
     </header>
   );
 };
