@@ -1,18 +1,26 @@
-import "./App.css";
-import { Routes, Route } from "react-router-dom";
-import Login from "./component/layout/login";
-import Header from "./component/layout/header";
-import SignUp from "./component/layout/signup";
-import Footer from "./component/layout/footer";
+import { Navigate, Outlet, Route, Routes } from "react-router-dom";
+import LayoutAdmin from "./admin/components/LayoutAdmin";
+import ProductList from "../src/admin/pages/products/list";
 
 function App() {
   return (
     <>
+      {/* <Counter /> */}
       <Routes>
-        <Route path="/login" element={<Login />}></Route>
-        <Route path="/header" element={<Header />}></Route>
-        <Route path="/signup" element={<SignUp />}></Route>
-        <Route path="/footer" element={<Footer/>}></Route>
+        <Route
+          path="admin"
+          element={
+            <LayoutAdmin>
+              <Outlet />
+            </LayoutAdmin>
+          }
+        >
+          {/* <Route index element={<Navigate to="dashboard" />} />
+          <Route path="dashboard" element={<h1>Dashboard</h1>} /> */}
+          <Route path="products">
+            <Route index element={<ProductList />} />
+          </Route>
+        </Route>
       </Routes>
     </>
   );
