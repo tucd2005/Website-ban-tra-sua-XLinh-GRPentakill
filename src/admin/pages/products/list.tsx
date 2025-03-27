@@ -64,3 +64,30 @@ const ProductList = () => {
 };
 
 export default ProductList;
+
+// import React from 'react'
+// import useDelete from '../../hooks/useDelete';
+// import { Button, message, Popconfirm } from 'antd';
+
+// const ProductList = () => {
+// const { mutate } = useDelete({ resource: "products" });
+//   return (
+//     <Popconfirm
+//     title="Bạn có chắc chắn muốn xóa không?"
+//     onConfirm={() => {
+//         mutate(item.id, {
+//             onSuccess: () => message.success("Xóa thành công"),
+//             onError: (error) => message.error(error?.message),
+//         });
+//     }}
+//     >
+//         <Button type="primary" danger size="small">
+//             Xóa
+//         </Button>
+//     </Popconfirm>
+
+//   )
+// }
+
+// export default ProductList
+
