@@ -2,9 +2,10 @@ import { Button, Popconfirm, Table } from "antd";
 import useList from "../../hooks/useList"
 import ProductDrawer from "../../components/ProductDrawer";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const ProductList = () => {
+      const navigate = useNavigate();
       const columns = [
             { title: "ID", dataIndex: "id", key: "id" },
             { title: "Name", dataIndex: "name", key: "name" },
@@ -14,12 +15,14 @@ const ProductList = () => {
             {
                   title: "Action",
                   key: "action",
-                  render: () => (
+                  dataIndex: "id",
+                  render: (id:number) => (
                         <div>
                               <Popconfirm title={"Ban co chac chan muon xoa"} okText="Yes" cancelText="No" >
                                     <Button danger className="m-1" >Delete</Button>
                               </Popconfirm>
-                              <Button className="m-1">Edit</Button>
+                              <Button className="m-1" onClick={()=>navigate(`/admin/products/edit/${id}`)} >Edit</Button>
+
                               {/* <Button className="m-1">Detail</Button> */}
                         </div>
                   ),
