@@ -1,5 +1,10 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -8,10 +13,17 @@ const Footer = () => {
         {/* Company Info */}
         <div>
           <h2 className="text-2xl font-bold text-green-600">Grabit</h2>
-          <p className="mt-2">Grabit is the biggest market of grocery products. Get your daily needs from our store.</p>
+          <p className="mt-2">
+            Grabit is the biggest market of grocery products. Get your daily
+            needs from our store.
+          </p>
           <div className="mt-4 flex space-x-2">
-            <button className="bg-black text-white px-4 py-2 rounded">Google Play</button>
-            <button className="bg-black text-white px-4 py-2 rounded">App Store</button>
+            <button className="bg-black text-white px-4 py-2 rounded">
+              Google Play
+            </button>
+            <button className="bg-black text-white px-4 py-2 rounded">
+              App Store
+            </button>
           </div>
         </div>
 
@@ -63,5 +75,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
