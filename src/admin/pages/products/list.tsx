@@ -30,7 +30,6 @@ const ProductList = () => {
                             mutate(item.id, {
                                 onSuccess: () => {
                                     messageApi.success("Xóa thành công");
-
                                 },
                                 onError: (error) => messageApi.error(error?.message),
                             });
