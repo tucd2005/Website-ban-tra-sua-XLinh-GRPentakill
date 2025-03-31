@@ -3,10 +3,11 @@ import useList from "../../hooks/useList";
 import ProductDrawer from "../../components/ProductDrawer";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import useDelete from "../../hooks/useDelete";  
+import useDelete from "../../hooks/useDelete";
 import { useQueryClient } from "@tanstack/react-query";
 
 const ProductList = () => {
+
     const { mutate } = useDelete({ resource: "products" });
     const [messageApi, contextHolder] = message.useMessage();
     const queryClient = useQueryClient();
@@ -43,6 +44,29 @@ const ProductList = () => {
             ),
         },
     ];
+// =======
+//       const columns = [
+//             { title: "ID", dataIndex: "id", key: "id" },
+//             { title: "Name", dataIndex: "name", key: "name" },
+//             { title: "Description", dataIndex: "description", key: "description" },
+//             { title: "Price", dataIndex: "price", key: "price" },
+//             { title: "Material", dataIndex: "material", key: "material" },
+//             {
+//                   title: "Action",
+//                   key: "action",
+//                   render: () => (
+//                         <div>
+//                               <Popconfirm title={"Ban co chac chan muon xoa"} okText="Yes" cancelText="No" >
+//                                     <Button danger className="m-1" >Delete</Button>
+//                               </Popconfirm>
+//                               <Button className="m-1">Edit</Button>
+//                               {/* <Button className="m-1">Detail</Button> */}
+//                         </div>
+//                   ),
+//             },
+//       ];
+//       // const [open, setOpen] = useState(false);
+// >>>>>>> 5c5ce17283350483a0e4dbf0d085207c1125ab8a
 
     const { data, isLoading, error } = useList({ resource: "products" });
 
