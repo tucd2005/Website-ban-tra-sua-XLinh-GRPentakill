@@ -3,13 +3,13 @@ import Header from "./header";
 import Footer from "./footer";
 // import Footer from "./footer";
 
-const login = () => {
+const Login = () => {
   return (
     <div>
-      <div>
+      {/* <div>
         <Header />
-      </div>
-      <div className="flex justify-center items-center min-h-[calc(100vh-80px)] pt-20">
+      </div> */}
+      <div className="flex justify-center items-center min-h-[calc(100vh-80px)] pt-5">
         <div className="bg-white p-8 rounded-lg shadow-lg flex max-w-3xl w-full">
           {/* Form Section */}
           <div className="w-1/2 p-6">
@@ -64,19 +64,19 @@ const login = () => {
           </div>
           {/* Image Section */}
           <div className="w-1/2">
-            <img
+            {/* <img
               src="https://picsum.photos/id/237/200/300"
               alt="Farmer holding vegetables"
               className="w-full h-full object-cover rounded-r-lg"
-            />
+            /> */}
           </div>
         </div>
       </div>
-      <div>
+      {/* <div>
         <Footer />
-        </div>
+      </div> */}
     </div>
   );
 };
 
-export default login;
+export default Login;

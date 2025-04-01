@@ -74,7 +74,7 @@ const Header: React.FC = () => {
             <FaUser className="text-xl" />
             <div>
               <p className="text-sm">Account</p>
-              <a href="#" className="text-blue-600 text-sm">
+              <a href="login" className="text-blue-600 text-sm">
                 Login
               </a>
             </div>
@@ -107,7 +107,7 @@ const Header: React.FC = () => {
           </button>
           <div className="flex space-x-6">
             <a
-              href="#"
+              href="/"
               className="text-gray-700 hover:text-green-700 font-medium"
             >
               Home
