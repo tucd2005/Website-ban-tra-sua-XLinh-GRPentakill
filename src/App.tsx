@@ -3,11 +3,10 @@ import LayoutAdmin from "./admin/components/LayoutAdmin";
 import ProductList from "../src/admin/pages/products/list";
 import ProductEdit from "./admin/pages/products/edit";
 import ProductCart from "./admin/pages/products/cart";
-import ProductAdd from "./admin/pages/products/create";
-import Layout from "./component/layout";
 import Home from "./component/layout/home";
 import Login from "./component/layout/login";
 import Create from "./admin/pages/products/create";
+import Layout from "./component/Layout";
 
 function App() {
   return (
