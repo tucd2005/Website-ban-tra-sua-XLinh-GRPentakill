@@ -6,7 +6,7 @@ type useUpdateParams = {
     id: number
 
 }
-const useCreate = ({resource, id}: useUpdateParams) => {
+const useUpdate = ({resource, id}: useUpdateParams) => {
     const queryClient = useQueryClient();
     return useMutation({
         mutationFn: (variable) => {
@@ -20,4 +20,4 @@ const useCreate = ({resource, id}: useUpdateParams) => {
     })
 }
 
-export default useCreate
+export default useUpdate

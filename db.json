@@ -1,24 +1,11 @@
 {
   "products": [
     {
-      "id": "3",
-      "name": "Kärcher K5 Premium Pressure Washer",
-      "description": "Blast away dirt, grime, and mildew with this powerful pressure washer. Featuring a 1,800 PSI motor, multiple spray nozzles, and a detergent injector, it's perfect for cleaning cars, decks, patios, and more.",
-      "price": 299.99,
-      "material": "Plastic, metal",
-      "category": {
-        "id": 15
-      }
-    },
-    {
-      "id": "4",
       "name": "Rode NT-USB Mini Condenser Microphone",
-      "description": "Capture studio-quality audio for podcasts, streaming, and music creation. Sleek and compact design with easy USB connectivity makes it perfect for any setup.",
       "price": 99.99,
-      "material": "Metal, plastic",
-      "category": {
-        "id": 3
-      }
+      "category": "2",
+      "description": "Capture studio-quality audio for podcasts, streaming, and music creation. Sleek and compact design with easy USB connectivity makes it perfect for any setup.",
+      "id": "4"
     },
     {
       "id": "5",

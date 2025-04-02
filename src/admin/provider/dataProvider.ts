@@ -62,18 +62,25 @@ const dataProvider = {
     },
 
     updateOne: async({resource, variable, id}: updateType) => {
-        const response = await axios.put(`/${resource}/${id}`, variable);
+        const response = await config.put(`/${resource}/${id}`, variable);
         return{
             data: response.data
     }
     },
 
-    getOne: async({resource, id}:getOneType) => {
-       const response = await axios.get(`/${resource}/${id}`);
-       return {
-        data: response.data
-       }
+    getOne: async ({ resource, id }: getOneType) => {
+        const response = await config.get(`/${resource}/${id}`, {
+           
+        });
+    
+       
+    
+        return {
+            data: response.data,
+        };
     }
+    
+    
 }
 
 export const {getList, deleteOne, createOne, updateOne, getOne} = dataProvider;
